@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CB45E222-1933-4C3E-8C9F-A0B592D45895</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CaptuvoCordova</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41693F11-3D38-45D3-A82A-2195EDAF0C0A</key>
+		<string>https://github.com/BlueFletch/cordova-plugin-honeywell-captuvo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CaptuvoCordova/CaptuvoCordova.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41693F11-3D38-45D3-A82A-2195EDAF0C0A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BlueFletch/cordova-plugin-honeywell-captuvo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>41693F11-3D38-45D3-A82A-2195EDAF0C0A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41693F11-3D38-45D3-A82A-2195EDAF0C0A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cordova-plugin-honeywell-captuvo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

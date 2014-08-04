@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:rim="http://www.blackberry.com/ns/widgets"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.citronium.lineaprocdv"
+    id="com.bluefletch.honeywell.captuvo"
     version="0.1">
-    <name>LineaProCDV</name>
-    <description>LineaProCDV</description>
+    <name>CaptuvoCDV</name>
+    <description>Honeywell Captuvo Cordova plugin</description>
     <license>MIT</license>
-    <keywords>lineapro,citronium</keywords>
-    <repo>https://github.com/ttatarinov/lineapro-phonegap-plugin.git</repo>
+    <keywords>captuvo,magstripe,msr,barcode</keywords>
+    <repo>https://github.com/BlueFletch/cordova-plugin-honeywell-captuvo.git</repo>
     <issue></issue>
     
-    <js-module src="www/LineaProCDV.js" name="LineaProCDV">
-        <clobbers target="LineaProCDV" />
+    <js-module src="www/CaptuvoCDV.js" name="CaptuvoCDV">
+        <clobbers target="captuvo" />
     </js-module>
     
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="LineaProCDV">
-                <param name="ios-package" value="LineaProCDV" />
+            <feature name="CaptuvoCDV">
+                <param name="ios-package" value="CaptuvoCDV" />
             </feature>
         </config-file>
         
-        <header-file src="src/ios/LineaProCDV.h" />
-        <header-file src="src/ios/DTDevices.h" />
-        <source-file src="src/ios/LineaProCDV.m" />
+        <header-file src="src/ios/Captuvo.h" />
+        <header-file src="src/ios/CaptuvoCDV.h" />
+        <source-file src="src/ios/CaptuvoCDV.m" />
         
-        <source-file src="src/ios/libdtdev.a" framework="true" compiler-flags="-fno-objc-arc"/>
+        <source-file src="src/ios/libCaptuvoSDK.a" framework="true" compiler-flags="-fno-objc-arc"/>
         
         <framework src="ExternalAccessory.framework" />
+        
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>com.honeywell.scansled.protocol.decoder</string>
+                <string>com.honeywell.scansled.protocol.msr</string>
+                <string>com.honeywell.scansled.protocol.pm</string>
+              </array>
+        </config-file>
     </platform>
 
     
